@@ -1,0 +1,50 @@
+body {
+  background-color: #000;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input[type=text] {
+  padding: 17px 200px 17px 15px;
+  display: block !important;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  background-color: crimson;
+  color: white;
+  padding: 17px 168px;
+  width: 500px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 30px !important;
+}
+
+button:hover {
+  color: crimson;
+  background: none;
+  border: solid crimson;
+  transition: all 0.3s ease;
+}
+
+#addProjectBtn {
+  display: none;
+}
+
+#project-form {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#project-form p {
+  color: white;
+  margin-top: 30px;
+}

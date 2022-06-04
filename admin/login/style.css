@@ -1,0 +1,50 @@
+body {
+   margin-top: 30px;
+   font-family: 'Ubuntu', sans-serif;
+   background-color: #000;
+}
+
+.center {
+   margin: auto !important;
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+input[type=email], input[type=password] {
+   width: 100% !important;
+   padding: 17px 200px 17px 15px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   outline: none;
+}
+
+button {
+   background-color: crimson;
+   color: white;
+   border-radius: 5px;
+   padding: 17px 168px;
+   margin-top: 30px;
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+   width: 100% !important;
+   font-size: 15px;
+}
+
+
+button:hover {
+   color: crimson;
+   background: none;
+   border: 3px solid crimson;
+   transition: all 0.3s ease;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+p {
+   color: white;
+   /* margin-top: 30px; */
+}
