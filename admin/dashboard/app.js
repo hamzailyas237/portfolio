@@ -17,7 +17,7 @@ const db = getDatabase(app);
 
 addMoreProjects.addEventListener('click', () => {
     let projectForm = document.getElementById('project-form')
-    projectForm.style.display = 'flex'
+    projectForm.style.display = 'block'
     addMoreProjects.style.display = 'none'
     addProjectBtn.style.display = 'block'
 })
@@ -45,6 +45,7 @@ const auth = getAuth();
 signOutBtn.addEventListener('click', () => {
     signOut(auth).then(() => {
         location.href = '../login/index.html'
+        alert('Admin Logged Out Successfully')
     }).catch((error) => {
         (error)
     });
@@ -53,10 +54,10 @@ signOutBtn.addEventListener('click', () => {
 // User State 
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        const uid = user.uid;
-        console.log(uid)
-    } else if (user == null) {
-        alert("Access denied.\nYou are not Logged In.")
-            location.href = ("../login/index.html")
+        return user
+    } 
+    else if (user == null) {
+        location.href = ("../login/index.html")
     }
 });
+

@@ -4,7 +4,7 @@ body {
 }
 
 input[type=text] {
-  padding: 17px 200px 17px 15px;
+  padding: 17px 320px 17px 15px;
   display: block !important;
   outline: none;
   border: 1px solid #ccc;
@@ -40,11 +40,50 @@ button:hover {
 
 #project-form {
   display: none;
-  flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+#project-form input {
+  margin: 0 auto !important;
 }
 
 #project-form p {
   color: white;
   margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width:550px) {
+  button {
+    padding: 17px;
+    width: 400px;
+    font-size: 15px;
+ 
+  } 
+  input {
+    padding: 17px 210px 17px 15px !important;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  button {
+    padding: 17px;
+    width: 300px;
+    font-size: 14px;
+ 
+  } 
+  input {
+    padding: 17px 110px 17px 15px !important;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  button {
+    padding: 17px;
+    width: 200px;
+    font-size: 13px;
+ 
+  } 
+  input {
+    padding: 17px 12px 17px 15px !important;
+  }
 }
